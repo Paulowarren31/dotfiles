@@ -123,8 +123,8 @@ export PATH=${PATH}:${ANDROID_HOME}/tools
 export JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64
 export PATH=${PATH}:~/batCave/EECS388/388-p1/fastcoll
 
-Brown='\e[1;32m'
 White='\e[1;37m'
-Pink='\e[0;1m'
-export PS1="\[$Brown\]\d\[$White\] :) \n\[$Pink\]$ "
+OWhite='\e[0;37m'
+Pink='\e[0;35m'
+export PS1="\[$White\]\d :)\n\[$Pink\]$ \[$OWhite\]"
 export PS2="-->"
