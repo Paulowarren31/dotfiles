@@ -120,11 +120,24 @@ function cdn(){ for i in `seq $1`; do cd ..; done; }
 
 export ANDROID_HOME=/home/paulo/Android/Sdk
 export PATH=${PATH}:${ANDROID_HOME}/tools
+export PATH=${PATH}:${ANDROID_HOME}/platform-tools
 export JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64
 export PATH=${PATH}:~/batCave/EECS388/388-p1/fastcoll
+export PATH=${PATH}:/bin/
+export PATH=${PATH}:~/batCave/pindev
 
 White='\e[1;37m'
 OWhite='\e[0;37m'
 Pink='\e[0;35m'
-export PS1="\[$White\]\d :)\n\[$Pink\]$ \[$OWhite\]"
+export PS1="\[$White\]\d \w :)\n\[$Pink\]$ \[$OWhite\]"
 export PS2="-->"
+
+export VISUAL="/usr/bin/vim.gnome"
+export EDITOR="$VISUAL"
+
+export LD_LIBRARY_PATH=/usr/lib/oracle/12.2/client64/lib:$LD_LIBRARY_PATH
+export PATH=/opt/oracle/instantclient_12_2:$PATH
+export TNS_ADMIN=/home/paulo/ora
+export ORACLE_HOME=/usr/lib/oracle/12.2/client64
+export PATH=$PATH:$ORACLE_HOME/bin
+export PATH=$PATH:/home/paulo/batCave/sqldeveloper/sqldeveloper/bin
